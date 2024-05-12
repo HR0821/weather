@@ -21,22 +21,23 @@ schedule library: You can install it using pip with the following command:
 
 `python weather data_grabber.py`
 This will start the scheduled job that grabs weather data from the HKO API and logs it to the weather_data.csv file.
+
 4. The script will run indefinitely and fetch weather data every day. You can stop the script by pressing Ctrl+C in the terminal.
 
+## Output
+The weather data will be logged to a CSV file named weather_data.csv. The file will be created in the same directory as the script if it doesn't exist. Each row in the CSV file represents a weather data entry, including the date, maximum temperature, minimum temperature, maximum relative humidity, minimum relative humidity, wind information, and weather description.
 
+## Testing
+To test the scheduled job and ensure it runs as expected, you can manually check the weather_data.csv file after running the script for a few days. Verify that new weather data entries are added to the file each day at the specified intervals. Additionally, you can check the console output for any error messages.
 
+If it is difficult to check that the code is correct because the time interval is daily, we can change the code from 
 
+`schedule.every().day.do(job)`
 
-## Set up and Run Scheduled Data Grabbing Job
+to
 
-To set up and run the scheduled data grabbing job, follow the instructions below:
+`schedule.every().minute.do(job)`
 
-1. Clone this repository to your local machine.
-2. Install the necessary dependencies using pip.
-Make sure you have `pip` installed on your system.
+to help us test the code correctly quickly.
 
-3. Configure the job settings.
-
-Open the `config.py` file and update the configuration settings according to your requirements. For example, you can set the intervals at which the data grabbing job runs and specify the location (Hong Kong) for capturing weather data.
-
-4. Run the scheduled job.
+If you encounter any issues or errors during the setup or usage of the script, please refer to the Issues section of the repository to see if a similar problem has been reported. If not, feel free to open a new issue with relevant details, including the error message and steps to reproduce the issue.
