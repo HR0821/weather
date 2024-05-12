@@ -20,9 +20,9 @@ schedule library: You can install it using pip with the following command:
 3. Find the `weather data_grabber.py` file to open and run or run the script using the following command:
 
 `python weather data_grabber.py`
-This will start the scheduled job that grabs weather data from the HKO API and logs it to the weather_data.csv file.
+This will start the scheduled job that grabs weather data from the HKO API and logs it to the `weather_data.csv file`.
 
-4. The script will run indefinitely and fetch weather data every day. You can stop the script by pressing Ctrl+C in the terminal.
+4. The script will run indefinitely and fetch weather data every day. You can stop the script by pressing `Ctrl+C` in the terminal.
 
 ## Output
 The weather data will be logged to a CSV file named weather_data.csv. The file will be created in the same directory as the script if it doesn't exist. Each row in the CSV file represents a weather data entry, including the date, maximum temperature, minimum temperature, maximum relative humidity, minimum relative humidity, wind information, and weather description.
