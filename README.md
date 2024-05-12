@@ -40,4 +40,6 @@ to
 
 to help us test the code correctly quickly.
 
+In the compressed file, `weather_data.csv` already has the correct weather data that I tested.
+
 If you encounter any issues or errors during the setup or usage of the script, please refer to the Issues section of the repository to see if a similar problem has been reported. If not, feel free to open a new issue with relevant details, including the error message and steps to reproduce the issue.
