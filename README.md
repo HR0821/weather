@@ -3,9 +3,9 @@ This is a Python script that performs scheduled data grabbing of weather data fo
 
 ## Prerequisites
 Before running the script, make sure you have the following dependencies installed:
-Python 3
+'Python 3.7'
 requests library: You can install it using pip with the following command:
-pip install requests
+'pip install requests'
 
 
 
